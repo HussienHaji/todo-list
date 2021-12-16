@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #61dbfb;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin-top: 10rem;
+  width: 80%;
+  max-width: 100rem;
+  background-color: #3a3f49;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  height: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.title span {
+  color: #61dbfb;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+}
+input::-webkit-input-placeholder {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.form-control input {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.6rem;
+  outline: 0;
+  color: #aeaeae;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 80%;
+  max-width: 40rem;
+  margin: 1rem 0;
+  height: 6rem;
+  color: #3a3f49;
+  font-weight: bold;
+}
+
+.form-control .btn {
+  border: 0;
+  text-align: center;
+  padding: 1.2rem 3rem;
+  border-radius: 0.5rem;
+  background-color: #61dbfb;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 4.2rem;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.form-control .btn:active {
+  transform: scale(0.95);
+}
+
+.todo-container {
+  width: 100%;
+  border-top: 2px solid #707070;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.todo {
+  width: 100%;
+  border-bottom: 2px solid #707070;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  color: #aeaeae;
+}
+
+.todo span {
+  margin: 0 1rem;
+  margin-right: auto;
+}
+
+.todo img {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+.todo img:hover {
+  transform: scale(1.1);
+}
+.todo img:active {
+  transform: scale(0.98);
+}
+
+li.checked {
+  text-decoration: line-through;
+  color: #707070;
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    padding: 5rem 3rem;
+  }
+  .form-control {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-control input{
+    width: 100%;
+  }
+  .form-control .btn {
+    margin-top: 2rem;
+  }
+
+
+}
